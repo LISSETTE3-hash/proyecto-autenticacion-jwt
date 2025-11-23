@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #F8F4FF 0%, #E8F4FF 100%);
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+a {
+  color: #6BBBDB;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #6B8FBF;
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(216, 150, 216, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+input:focus {
+  border-color: #D896D8 !important;
+  box-shadow: 0 0 0 3px rgba(216, 150, 216, 0.2);
+}
+
+/* Animación de spinner */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Efectos de hover en cards */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(168, 197, 230, 0.3);
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F4FF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #D896D8 0%, #6BBBDB 100%);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #9B6B9E 0%, #6B8FBF 100%);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 24px !important;
+  }
+  
+  h2 {
+    font-size: 20px !important;
+  }
+}
